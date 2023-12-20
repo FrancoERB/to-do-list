@@ -1,7 +1,7 @@
 import './App.css';
 import * as React from 'react'
 import { useState } from 'react';
-import { ChakraProvider, HStack, VStack } from '@chakra-ui/react'
+import { ChakraProvider, HStack, VStack, Text } from '@chakra-ui/react'
 import Form from './components/Form';
 import Task from './components/Task';
 
@@ -40,9 +40,13 @@ function App() {
 
   return (
     <ChakraProvider>
-      <VStack className='App'>
+      <VStack className='App' flexDirection={'row'}>
+        <VStack className='dateContainer'>
+          <Text id='hour'>22:22</Text>
+          <Text id='date'>Martes, 19 de diciembre</Text>
+        </VStack>
         <VStack className='componentsContainer'>
-          <VStack className='containerTopElements'>
+          <VStack className='containerTopElements' alignItems={'flex-start'}>
             <HStack className='titleContainer'>
             <h1 id='titleWelcome'>
               Things to do

@@ -1,7 +1,7 @@
 import { HStack, Text, IconButton} from '@chakra-ui/react'
 import './style.css'
 import { useState } from 'react'
-// import { MdOutlineDelete } from "react-icons/md";
+import { MdOutlineDelete } from "react-icons/md";
 
 
 const Task = ({tarea, borrarTarea}) => {
@@ -12,7 +12,7 @@ const Task = ({tarea, borrarTarea}) => {
                 <h2 className='titleTask'>{tarea}</h2>
             </HStack>
             <IconButton 
-                // icon={<MdOutlineDelete/>} 
+                icon={<MdOutlineDelete/>} 
                 fontSize={'20px'}
                 size={'sm'} id='eliminar'
                 variant={'none'}

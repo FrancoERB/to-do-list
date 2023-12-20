@@ -3,6 +3,17 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
+  background-image: url('./asset/background.png');
+  background-position: 'center';
+}
+
+.dateContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50%;
+  height: 90%;
+  border: 10px;
 }
 
 .componentsContainer {
@@ -10,13 +21,16 @@
   width: 40%;
   height: 90%;
   align-items: flex-start;
-  background-color: bisque;
+  background-color: transparent;
   justify-content: space-between;
+  backdrop-filter: blur(10px);
   border-radius: 5px;
 }
 
 .containerTopElements {
   display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -33,13 +47,26 @@ height: 20%;
   font-weight: bold;
 }
 
+#hour {
+  font-weight: bold;
+  font-size: 80px;
+  color: #fff;
+}
+
+#date {
+  font-weight: bold;
+  color: #fff;
+}
+
 #titleWelcome {
 font-size: 25px;
 margin-left: 5px;
+color: #fff;
 }
 
 #greeting {
  width: 100%;
  height: 50px;
  margin-left: 5%;
+ color: #fff;
 }
